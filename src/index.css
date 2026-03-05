@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Lalezar&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #EBDDC8;
+  color: #111111;
+  overflow-x: hidden;
+}
+
+/* Neo-Brutalism Utilities */
+.text-stroke-2 {
+  -webkit-text-stroke: 2px #111111;
+}
+.text-stroke-3 {
+  -webkit-text-stroke: 3px #111111;
+}
+.text-stroke-4 {
+  -webkit-text-stroke: 4px #111111;
+}
+
+.neo-shadow {
+  box-shadow: 6px 6px 0px #111111;
+}
+.neo-shadow-sm {
+  box-shadow: 4px 4px 0px #111111;
+}
+.neo-shadow-hover:hover {
+  box-shadow: 2px 2px 0px #111111;
+  transform: translate(4px, 4px);
+}
+
+/* Custom Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
